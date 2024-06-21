@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>機能集め/css適応まだ</title>
+</head>
+<body>
+    <!-- 一番上 -->
+    <main>
+        <nav>
+            <div class="site-center">
+                <div class="site-header">
+                    <img src="./images/mirialogo.jpg" class="logo" alt="UHYO">
+                    <button class="nav-bar-house">
+                        <i class="nav-bar">listopen</i>
+                    </button>
+                </div>
+                <!--menu mokuroku-->
+                <ul class="links">
+                    <li><a href="/sidemenu.html">ABOUT</a></li>
+                    <li><a href="/home.html">NEWS</a></li>
+                    <li><a href="/home.html">GAME</a></li>
+                    <li><a href="/home.html">EVENT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="section1">
+            <div class="top_menu">
+                <h2>background color : <span class="color">
+                    #f1f5e8
+                    </span>
+                </h2>
+                <button class="btn btn-hero" id="btn">押して</button>
+                <button class="btn btn-rollback">戻して</button>
+            </div>
+        </div>
+
+        <div id="section2">
+            <div class="top_picture_line">
+                <h2>
+                    押すだけで美少女が現れる？！超ラッキーwwww
+                    <img id="miria_photo" src="images/miria01.jpg">
+                </h2>
+                <button class="btn" id="btn">うひょ！</button>
+            </div>
+        </div>
+
+        <div id="section3">
+            <h2>This is TikTok</h2>
+            <span id="counter_value">0</span>
+            <div class="button-house">
+                <button class="btn down">down</button>
+                <button class="btn reset">reset</button>
+                <button class="btn up">up</button>
+            </div>
+        </div>
+
+        <div id="section4">
+            <div class="review_title">
+                <h2>アイドルご紹介</h2>
+                <div class="underline"></div>
+            </div>
+
+            <article class="review_space">
+                <div class="miria_review">
+                    <img id="miria_sd_photo" src="./images/SD/SDmiria01.jpg">
+                </div>
+                <h4 id="miria_name">マーチング☆メロディーズみりあ</h4>
+                <p id="miria_info">
+                    LMBGのメンバー。黄色のコーデが超お似合い。<br>
+                    この服でハイファイ☆デイズをうたった。
+                </p>
+                <div class="button-container">
+                    <button class="btn btn_left"> left </button>
+                    <button class="btn btn_right"> right </button>
+                    <button class="btn btn_random">docodemo</button>
+                </div>
+            </article>
+                
+        </div>
+
+        <div id="section5">
+            <h1>
+                これ研修で難しいなと思ったこと
+            </h1>
+            <!-- 前に表示されるモーダル -->
+            <header class="modal_front">
+                <div class="banner">
+                    <h1>モーダルウィンドウ</h1>
+                    <button class="modal_btn" style="width:100px;">open the door</button>
+                </div>
+            </header>
+            <!-- 開かれたモダール -->
+            <div class="modal_back">
+                <div class="modal_content">
+                    <img id="modal_miria" src="./images/Wallpaper/chocutemiria.jpg">
+                    <button class="close_btn">戻します。</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JavaScript -->
+
+    <!-- 色をヘッサコードを利用して設定 -->
+    <script src="script/hex.js"></script>
+    <!-- ランダムみりあちゃん ぶーーーーー！ -->
+    <script src="script/miriapicture.js"></script>
+    <!-- 数字管理システム -->
+    <script src="script/counter.js"></script>
+    <!-- レビューページ -->
+    <script src="script/review.js"></script>
+    <!--上段メニューバー -->
+    <script src="script/navbar.js"></script>
+    <!-- モーダルウィンドウ -->
+    <script src="script/modal.js"></script>
+</body>
+</html>
